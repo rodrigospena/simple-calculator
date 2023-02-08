@@ -1,12 +1,15 @@
 body {
   font: 10pt Helvetica;
 }
-h1 {
-  font: 16pt Helvetica;
+
+h3 {
+  font: bold 15pt Helvetica;
 }
+
 label#operationChoiceTitle{
   font: 10pt Helvetica;
 }
+
 select#operationChoice {
   background-color: rgb(77, 157, 134);
   color: white;
@@ -15,12 +18,14 @@ select#operationChoice {
   border-style: inherit;
   border-radius: 10px;
 }
+
 input.operationNumber {
   background-color: rgb(249, 249, 249);
   border-color: rgb(252, 252, 252);
   border-style: inherit;
   border-radius: 10px;
 }
+
 input.operationResult {
   background-color: rgb(77, 157, 134);
   color: white;
@@ -28,7 +33,16 @@ input.operationResult {
   border-style: inherit;
   border-radius: 10px;
 }
-fieldset#calculatorField{
+
+.fieldset-Title {
+  font: bold 20px Helvetica;
+  margin-bottom: 8px;
+}
+
+.calculator-fildset {
+  margin-top: 20px;
+  margin-left: 20px;
   border-radius: 10px;
   width: 550px;
 }
+

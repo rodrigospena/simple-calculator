@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <script src="/script.js"></script>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="/style.css">
   </head>
 
   <body>
-    <h1>Calculadora Básica</h1>
-
-    <fieldset id="calculatorField">
+    <fieldset id="calculatorField" class="calculator-fildset">
+      <legend class="fieldset-Title">Calculadora Básica</legend>
       <label for="operationChoice" id="operationChoiceTitle"><strong>Selecione a operação:</strong></label>
       <select id="operationChoice" name="operationChoice" onchange="changeSign()">
         <option value="add">Adição</option>
@@ -26,7 +25,7 @@
       <input class="operationNumber" type="number" name="number1" id="number1" onkeyup="calcOperation()">
       <span id="operationSign">+</span>
       <input class="operationNumber" type="number" name="number2" id="number2" onkeyup="calcOperation()">
-      <strong> = </strong>
+      <span>=</span>
       <input class="operationResult" type="number" name="result" id="result" readonly>
     </fieldset>
 
