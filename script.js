@@ -4,18 +4,49 @@ function calcOperation() {
     document.querySelector('input#number2').value != ''
   ) {
     const number1 = document.querySelector('input#number1').value
-    console.log(number1)
     const number2 = document.querySelector('input#number2').value
-    console.log(number2)
-    const result = Number(number1) + Number(number2)
+    const operation = document.querySelector('select#operationChoice').value
+
+    var result = '';
+    switch (operation) {
+      case 'add':
+        result = Number(number1) + Number(number2)
+        break
+      case 'sub':
+        result = Number(number1) - Number(number2)
+        break
+      case 'multi':
+        result = Number(number1) * Number(number2)
+        break
+      case 'div':
+        result = Number(number1) / Number(number2)
+        break
+
+    }
+
     document.querySelector('input#result').value = result
   } else {
     document.querySelector('input#result').value = '';
   }
 }
 
+function changeSign() {
+  calcOperation()
+  const operation = document.querySelector('select#operationChoice').value
 
-function operationSign() {
-  
+  switch (operation) {
+    case 'add':
+      document.querySelector("span#operationSign").textContent = "+"
+      break
+    case 'sub':
+      document.querySelector("span#operationSign").textContent = "-"
+      break
+    case 'multi':
+      document.querySelector("span#operationSign").textContent = "x"
+      break
+    case 'div':
+      document.querySelector("span#operationSign").textContent = "/"
+      break
+
+  }
 }
-

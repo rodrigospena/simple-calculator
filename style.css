@@ -8,7 +8,7 @@ label#operationChoiceTitle{
   font: 10pt Helvetica;
 }
 select#operationChoice {
-  background-color: rgb(105, 191, 167);
+  background-color: rgb(77, 157, 134);
   color: white;
   margin-bottom: 10px;
   border-color: rgb(229, 229, 229);
@@ -22,7 +22,7 @@ input.operationNumber {
   border-radius: 10px;
 }
 input.operationResult {
-  background-color: rgb(105, 191, 167);
+  background-color: rgb(77, 157, 134);
   color: white;
   border-color: rgb(252, 252, 252);
   border-style: inherit;
