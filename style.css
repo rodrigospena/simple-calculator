@@ -1,0 +1,34 @@
+body {
+  font: 10pt Helvetica;
+}
+h1 {
+  font: 16pt Helvetica;
+}
+label#operationChoiceTitle{
+  font: 10pt Helvetica;
+}
+select#operationChoice {
+  background-color: rgb(105, 191, 167);
+  color: white;
+  margin-bottom: 10px;
+  border-color: rgb(229, 229, 229);
+  border-style: inherit;
+  border-radius: 10px;
+}
+input.operationNumber {
+  background-color: rgb(249, 249, 249);
+  border-color: rgb(252, 252, 252);
+  border-style: inherit;
+  border-radius: 10px;
+}
+input.operationResult {
+  background-color: rgb(105, 191, 167);
+  color: white;
+  border-color: rgb(252, 252, 252);
+  border-style: inherit;
+  border-radius: 10px;
+}
+fieldset#calculatorField{
+  border-radius: 10px;
+  width: 550px;
+}
